@@ -23,12 +23,12 @@ code. It is a must that we keep this timeline as clean as possible. If you've ev
 worked with version control before, you may have realized that merge conflicts are
 an issue if everyone is working on the mainline at the same time.
 
-To remedy this, Git has a concept called branching. For each new feature worked on, the
-developer is to create a new branch. For our project, you will make a new branch every
+To remedy this, Git has a concept called branching. Traditionally, every new feature
+or bug fix implies a branch. For our project, you will make a new branch every
 time you begin work, whether that is writing documentation, code, etc.      
 
 For this dummy repository, we'll create a new branch, do some work, and then push 
-the branch onto Github. 
+the branch onto Github (and, with it, our changes). 
 
 First check which branch we are on: `git branch`. The current branch, i.e. the checked-out branch, 
 will be marked with a `*`. If the asterisk is next to something other than `master`, then 
