@@ -80,7 +80,7 @@ Click that and submit the pull request. You're done. I'll get an email and appro
 good.
 
 Next time you begin work, issue this following command to make sure your branches are 100% in sync with 
-the remote repository. This will delete any local branches that are no longer needed.  
+the remote repository. 
 
 	$ git fetch -p
 
