@@ -76,19 +76,25 @@ Note the similar format to when we issued `git pull`. `origin` is the remote as 
 the `master` branch we are referring to the branch `practice/jerry-branch`.   
 
 Log in to Github and navigate to this repository. You should see a *Compare & Pull Request* button at the top. 
-Click that and submit the pull request. You're done. I'll push the changes to `master` if all looks good.
+Click that and submit the pull request. You're done. I'll get an email and approve the changes if it looks
+good.
 
-Next time you begin work, issue this following command to make sure you are 100% in sync with the remote 
-repository. This will delete any local branches that are no longer needed.  
+Next time you begin work, issue this following command to make sure your branches are 100% in sync with 
+the remote repository. This will delete any local branches that are no longer needed.  
 
 	$ git fetch -p
 
-# Additional info 
+# Additional Info
 
 I am including some additional incantations for cases that you may find yourself in when working. The first is
 pulling down any new updates while you are working on a branch. 
 
 	$ git pull origin master 
+
+After your branch has been merged with master, it isn't necessary to keep the local branch around on your computer. 
+Issue this command to delete a specified local branch. In this example, we used `practice/jerry-branch`.
+
+	$ git branch -d practice/jerry-branch
 
 # Resources 
 
